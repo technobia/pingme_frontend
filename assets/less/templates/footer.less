@@ -1,3 +1,52 @@
 #footer {
   .make-xs-column(12, 30px);
+  height: 75px;
+  background: @color-dark;
+
+  .left {
+    .make-xs-column(6, 0);
+
+    .copyright {
+      .make-middle(75px);
+      font-size: 11px;
+      color: white;
+    }
+  }
+
+  .right {
+    .make-xs-column(6, 0);
+    padding-top: 10px;
+
+    h1 {
+      font-size: 14px;
+      color: white;
+      margin: 0 0 7px;
+    }
+
+    .item {
+      float: left;
+      margin-right: 25px;
+      display: flex;
+
+      .fa {
+        font-size: 24px;
+        color: white;
+        margin-right: 15px;
+        line-height: 25px;
+      }
+
+      .info {
+        color: darkgray;
+      }
+
+      a {
+        color: darkgray;
+
+        &:hover {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
