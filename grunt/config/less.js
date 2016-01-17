@@ -17,7 +17,7 @@ module.exports = function(grunt) {
                 'report': 'min'
             },
             'files': {
-                'build/css/style.min.css': 'assets/less/main.less'
+                'assets/css/style.min.css': 'assets/less/main.less'
             }
         }
     };

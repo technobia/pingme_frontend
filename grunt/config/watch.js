@@ -10,10 +10,6 @@ module.exports = function(grunt) {
             files: lessFiles,
             tasks: ['less:compile']
         },
-        'js': {
-            files: jsFiles,
-            tasks: ['requirejs:compile']
-        },
         'livereload': {
             files: [lessFiles, jsFiles, templatesFiles],
             options: {
