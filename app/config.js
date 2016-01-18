@@ -15,6 +15,9 @@ define(function() {
             .when('/dia-diem', {
                 templateUrl: 'templates/dia-diem-danh-sach.html'
             })
+            .when('/dia-diem/chi-tiet', {
+                templateUrl: 'templates/dia-diem-chi-tiet.html'
+            })
             .otherwise({
                 templateUrl: 'templates/home.html'
             });
