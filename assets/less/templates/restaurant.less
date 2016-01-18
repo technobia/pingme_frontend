@@ -1,0 +1,126 @@
+#restaurant-list {
+  .make-xs-column(12, 0);
+
+  .big-place {
+    .make-xs-column(12, 0);
+  }
+
+  .small-place {
+    .make-xs-column(12, 0);
+    .make-md-column(6, 0);
+  }
+
+  .item {
+    height: 450px;
+    overflow: hidden;
+
+    .pic {
+      position: relative;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+      }
+    }
+
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, .8);
+      color: @color-dark;
+      font-size: 14px;
+      font-weight: bold;
+      height: 55px;
+      line-height: 15px;
+      padding: 10px 15px 0;
+
+      .small {
+        font-weight: normal;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+#restaurant-detail {
+  .make-xs-column(12, 0);
+
+  .big-place {
+    .make-xs-column(12, 0);
+    height: 450px;
+    overflow: hidden;
+
+    .pic {
+      position: relative;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+      }
+    }
+
+    .header {
+      .make-middle(45px);
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      background: rgba(255, 255, 255, .8);
+      color: @color-dark;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 0 15px;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 45px;
+      background: rgba(255, 255, 255, .8);
+      padding: 0 15px;
+
+      > ul {
+        margin: 0;
+
+        > li {
+          .make-middle(45px);
+          padding-right: 25px;
+
+          i {
+            font-size: 20px;
+            margin-right: 10px;
+          }
+
+          span {
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

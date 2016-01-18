@@ -12,6 +12,9 @@ define(function() {
             .when('/', {
                 templateUrl: 'templates/home.html'
             })
+            .when('/dia-diem', {
+                templateUrl: 'templates/dia-diem-danh-sach.html'
+            })
             .otherwise({
                 templateUrl: 'templates/home.html'
             });
