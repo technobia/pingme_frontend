@@ -8,7 +8,8 @@ require.config({
         'angular-route': '../node_modules/angular-route/angular-route.min',
         'jquery': '../node_modules/jquery/dist/jquery.min',
         'bootstrap': '../node_modules/bootstrap/dist/js/bootstrap.min',
-        'app': 'app'
+        'app': 'app',
+        'jssor': '../vendor/jssor.slider.min'
     },
     shim:{
         'angular': {
@@ -31,8 +32,12 @@ require.config({
         'app': {
             deps: [ 'angular', 'angular-route' ],
             exports: 'app'
+        },
+
+        'jssor': {
+            deps: ['jquery']
         }
     },
-    'deps': ['main', 'angular', 'angular-route', 'jquery', 'bootstrap'],
-    'include': ['angular', 'angular-route', 'jquery', 'bootstrap']
+    'deps': ['main', 'angular', 'angular-route', 'jquery', 'bootstrap', 'jssor'],
+    'include': ['angular', 'angular-route', 'jquery', 'bootstrap', 'jssor']
 });
