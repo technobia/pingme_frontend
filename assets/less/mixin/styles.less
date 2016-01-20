@@ -2,3 +2,43 @@
   height: @a;
   line-height: @a;
 }
+
+.image-center-absolute {
+  position: relative;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+  }
+}
+
+.absolute-box (@a, @b, @c, @d) {
+  position: absolute;
+  top: @a;
+  left: @b;
+  bottom: @c;
+  right: @d;
+}
+
+.main-header {
+  display: block;
+  padding: 15px;
+
+  span {
+    padding-left: 15px;
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+    border-left: 2px solid blue;
+  }
+}

@@ -15,22 +15,7 @@
     overflow: hidden;
 
     .pic {
-      position: relative;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        min-width: 50%;
-        min-height: 50%;
-      }
+      .image-center-absolute;
     }
 
     .header {
@@ -63,22 +48,7 @@
     overflow: hidden;
 
     .pic {
-      position: relative;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        min-width: 50%;
-        min-height: 50%;
-      }
+      .image-center-absolute;
     }
 
     .header {
@@ -118,6 +88,98 @@
           span {
             font-size: 14px;
             font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+#restaurant-detail .menu-list {
+  .make-xs-column(12, 0);
+
+  .header {
+    .main-header;
+  }
+
+  .body {
+    .make-xs-column(12, 0);
+
+    .item {
+      .make-xs-column(4, 30px);
+
+      .pic {
+        .make-xs-column(12, 0);
+        height: 350px;
+        overflow: hidden;
+
+        div {
+          .image-center-absolute;
+        }
+      }
+
+      .info {
+        .absolute-box(auto, 15px, 0, 15px);
+        background: rgba(255, 255, 255, .8);
+        padding: 12px 15px;
+
+        .name {
+          float: left;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        .price {
+          float: right;
+          font-size: 14px;
+          color: blue;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+#restaurant-detail .address{
+  .make-xs-column(12, 0);
+
+  .header {
+    .main-header;
+  }
+
+  .body {
+    .make-xs-column(12, 0);
+
+    .item {
+      .make-xs-column(6, 30px);
+      display: flex;
+
+      .pic {
+        width: 180px;
+        height: 120px;
+        overflow: hidden;
+
+        div {
+          .image-center-absolute;
+        }
+      }
+
+      .info {
+        margin-left: 15px;
+
+        h2 {
+          margin-top: 5px;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        span {
+          display: block;
+          padding: 2px 0;
+          font-size: 13px;
+
+          .fa {
+            width: 15px;
           }
         }
       }
