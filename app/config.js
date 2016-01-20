@@ -18,6 +18,12 @@ define(function() {
             .when('/dia-diem/chi-tiet', {
                 templateUrl: 'templates/dia-diem-chi-tiet.html'
             })
+            .when('/quy-dinh', {
+                templateUrl: 'templates/quy-dinh.html'
+            })
+            .when('/dieu-khoan-su-dung', {
+                templateUrl: 'templates/dieu-khoan-su-dung.html'
+            })
             .otherwise({
                 templateUrl: 'templates/home.html'
             });
